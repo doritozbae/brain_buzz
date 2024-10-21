@@ -199,7 +199,8 @@ footer {
   .description {
     height: 90px;
     margin-top: 10px;
-    font-weight: 400;
+    /* font-weight: 400; */
+    overflow: hidden;
   }
 
   .add_btn {
