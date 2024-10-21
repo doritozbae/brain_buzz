@@ -1,0 +1,274 @@
+.font-gilroy {
+    font-family: 'Gilroy', sans-serif !important;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+    font-family: 'Gilroy', sans-serif !important;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+body {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.total_font {
+    font-size: 32px; 
+}
+
+.items button {
+    width: 200px;
+    height: 44px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    border: 2px solid #2B2A29;
+    transition: 0.35s;
+}
+
+.items button:hover {
+   color:white;
+   background-color: #2B2A29;
+}
+
+.cart button {
+    margin-top: 12px;
+    width: 200px;
+    height: 44px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    color: white;
+    background-color: #2B2A29;
+    transition: 0.35s;
+}
+
+.cart button:hover {
+   color:#2B2A29;
+   background-color: inherit;
+   border: 1px solid #d3cfc8;
+}
+
+header{
+    display: flex;
+    flex-flow: row;
+    height: 80px;
+    background-color: #2B2A29;
+    padding: 15px;
+    color: white;
+}
+
+.header-img {
+    margin-right: 10px;
+}
+
+footer {
+    height: 40px;
+    background-color: #2B2A29;
+    padding: 4px;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-flow: row;
+}
+
+.heart_svg{
+    color: white;
+    width: 22px;
+    height: 22px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+}
+
+.items {
+    width: 70%;
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.cart {
+    display: fixed;
+    padding: 10px 0px;
+    width: 30%;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    height: auto;
+}
+
+.item {
+    width: 270px;
+    height: 360px;
+    padding: 10px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+
+.items-grid { 
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 360px 360px 360px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  
+  .item img {
+    height: 132px;
+  }
+
+  .item_price {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .description {
+    height: 90px;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+
+  .add_btn {
+    cursor: pointer;
+    background-color: #2B2A29;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: 0.35s;
+  }
+
+  .add_btn:hover {
+   opacity: 0.8;
+  }
+
+  .cart_icon {
+    width: 24px;
+    height: 20px;
+  }
+
+  .cart-header{
+    background-color: #2B2A29;
+    height: 56px;
+    color: white; 
+    text-transform: uppercase;
+    padding: 16px;
+  }
+
+  .cart-total {
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* -------------------------------- */
+  .img_template{
+    width: 48px;
+    height: 48px;
+    background-color: beige;
+    margin-right: 4px;
+  }
+
+  .img_template1 {
+    width: 250px;
+    height: 132px;
+    background-color: beige;
+    margin-bottom: 10px;
+  }
+
+/* ---------------------- */
+
+  .cart-item {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    padding: 10px 10px 15px 10px;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .close_icon {
+    position: absolute; 
+    width: 14px;
+    height: 14px;
+    right: 20px;
+    cursor: pointer;
+    top: 28px;
+  }
